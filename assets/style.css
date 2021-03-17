@@ -1,154 +1,179 @@
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 body {
-    font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
 }
 
-.flex-container-column{
-    display: flex;
-    flex-direction: column; 
-    max-width: 700px;
-    margin: 0 auto;
-    text-align: right;
-    background-color: rgb(78, 82, 105);
+header a i {
+	position: absolute;
+	left: 2%;
+	top: 2%;
 }
-.flex-container-row{
-    display: flex;
+
+.flex-container-column {
+	display: flex;
+	flex-direction: column;
+	max-width: 700px;
+	margin: 0 auto;
+	text-align: right;
+	background-color: rgb(78, 82, 105);
 }
-.button{
-    flex-basis: 20%;     /* Jarak antar flex */ 
-    font-size: 2em;
-    text-align: center;
-    padding: 15px;
-    margin: 10px;
-    border: 1px solid black;
-    border-radius: 100px;
-    background: -webkit-linear-gradient(top, rgb(94, 94, 94),rgb(94, 94, 94)); /* Make gradient color */ 
-    color: white;
-    cursor: pointer;
+.flex-container-row {
+	display: flex;
 }
-.double{
-    flex-basis: 45%; /* padding flex */ 
+.button {
+	flex-basis: 20%; /* Jarak antar flex */
+	font-size: 2em;
+	text-align: center;
+	padding: 15px;
+	margin: 10px;
+	border: 1px solid black;
+	border-radius: 100px;
+	background: -webkit-linear-gradient(
+		top,
+		rgb(94, 94, 94),
+		rgb(94, 94, 94)
+	); /* Make gradient color */
+	color: white;
+	cursor: pointer;
 }
-.display{
-    color: white;
-    width: 100%;
-    padding: 10px 20px;
-    margin-bottom: 10px;
-    background-color: #333333;
-    border: 1px solid black;
-    font-size: 2em;
+.double {
+	flex-basis: 45%; /* padding flex */
+}
+.display {
+	color: white;
+	width: 100%;
+	padding: 10px 20px;
+	margin-bottom: 10px;
+	background-color: #333333;
+	border: 1px solid black;
+	font-size: 2em;
 }
 .operator,
 .equals {
-   background: red;
-   color: white;
+	background: red;
+	color: white;
 }
 .clear,
 .percent,
-.negative{
-    background: rgb(209, 209, 209);
-    color: black;
+.negative {
+	background: rgb(209, 209, 209);
+	color: black;
 }
-.card{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
-    border-radius: 5px;
-    padding: 30px;
-    margin-top: 20px;
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
+	border-radius: 5px;
+	padding: 30px;
+	margin-top: 20px;
 }
-.button:hover{
-    background: sandybrown;
-    font-weight: bold;
+.button:hover {
+	background: sandybrown;
+	font-weight: bold;
 }
-.history{
-    width: 80%;
-    margin: 50px auto 0 auto;
-    overflow: scroll;
+.history {
+	width: 80%;
+	margin: 50px auto 0 auto;
+	overflow: scroll;
 }
-table{
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
-    border: 1px solid #ddd;
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	border: 1px solid #ddd;
 }
-th, td{
-    text-align: center;
-    padding: 16px;
+th,
+td {
+	text-align: center;
+	padding: 16px;
 }
-th{
-    background-color: rgb(78, 82, 105);
-    color: white;
+th {
+	background-color: rgb(78, 82, 105);
+	color: white;
 }
-tr:nth-child(even){
-    background-color: #d2d2d2;
+tr:nth-child(even) {
+	background-color: #d2d2d2;
 }
 
-.container{
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 200px 0;
-    text-align: center;
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 200px 0;
+	text-align: center;
 }
-.container h1{
-    font-size: 46px;
+.container h1 {
+	font-size: 46px;
 }
-.menu{
-    margin: 6% 0;
+.menu {
+	margin: 6% 0;
 }
-.menu a{
-    text-decoration: none;
-    padding: 15px;
-    margin: 10px;
-    border: 1px solid black;
-    border-radius: 100px;
-    color: white;
-    -webkit-transition: 0.4s ease;
-    transition: 0.4s ease;
+.menu a {
+	text-decoration: none;
+	padding: 15px;
+	margin: 10px;
+	border: 1px solid black;
+	border-radius: 100px;
+	color: white;
+	-webkit-transition: 0.4s ease;
+	transition: 0.4s ease;
 }
-.menu a:hover{
-    padding: 16px 20px;
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
+.menu a:hover {
+	padding: 16px 20px;
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
 }
-#calculator{
-    background: linear-gradient(to bottom right, rgb(0, 102, 255), rgb(81, 96, 179));
+#calculator {
+	background: linear-gradient(
+		to bottom right,
+		rgb(0, 102, 255),
+		rgb(81, 96, 179)
+	);
 }
-#area{
-    background: linear-gradient(to bottom right, rgb(255, 0, 212), rgb(163, 81, 179));
+#area {
+	background: linear-gradient(
+		to bottom right,
+		rgb(255, 0, 212),
+		rgb(163, 81, 179)
+	);
 }
-#rectangular{
-    background: linear-gradient(to bottom right, rgb(255, 0, 0), rgb(179, 81, 81));
+#rectangular {
+	background: linear-gradient(
+		to bottom right,
+		rgb(255, 0, 0),
+		rgb(179, 81, 81)
+	);
 }
-footer{
-    text-align: center;
+footer {
+	text-align: center;
 }
-.capitalize-yellow{
-    color: orange;
-    font-weight: 800;
-    font-size: 1.6em;
+.capitalize-yellow {
+	color: orange;
+	font-weight: 800;
+	font-size: 1.6em;
 }
 
 @media screen and (max-width: 520px) {
-    .button {
-        padding: 20px;
-        font-size: 1em;
-    }
-    .display{
-        font-size: 1.2em;
-    }
-    .history{
-        width: 100%;
-    }
-    .container h1{
-        font-size: 30px;
-    }
-    .menu a{
-        padding: 7px;
-        margin: 2px;
-        font-size: 12px;
-    }
-    .menu a:hover{
-        padding: 8px 9px;
-    }
+	.button {
+		padding: 20px;
+		font-size: 1em;
+	}
+	.display {
+		font-size: 1.2em;
+	}
+	.history {
+		width: 100%;
+	}
+	.container h1 {
+		font-size: 30px;
+	}
+	.menu a {
+		padding: 7px;
+		margin: 2px;
+		font-size: 12px;
+	}
+	.menu a:hover {
+		padding: 8px 9px;
+	}
 }
